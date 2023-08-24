@@ -1,7 +1,8 @@
 package org.leetcode.mergesortedarray;
 
-public class Solution {
+public class Solution implements Subject{
 
+    @Override
     public void merge(int[] nums1, int m, int[] nums2, int n) {
 
         int p1 = m - 1;
