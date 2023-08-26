@@ -1,7 +1,5 @@
 package org.leetcode.validpalindrome;
 
-import java.util.StringJoiner;
-
 public final class Solution {
 
     /**
