@@ -3,29 +3,27 @@ package org.leetcode.validpalindrome;
 import java.util.StringJoiner;
 
 public class Solution {
-    private final StringBuilder sb = new StringBuilder();
-
-
     public boolean isPalindrome(String s) {
-        String convertedString = convert(s);
-        int length = convertedString.length();
-        int left = 0;
-        int right = length - 1;
-
-        while (left < right) {
-            if (convertedString.charAt(left++) != convertedString.charAt(right--)) {
-                return false;
+        if (s.isEmpty()) {
+            return true;
+        }
+        int start = 0;
+        int last = s.length() - 1;
+        while(start <= last) {
+            char currFirst = s.charAt(start);
+            char currLast = s.charAt(last);
+            if (!Character.isLetterOrDigit(currFirst )) {
+                start++;
+            } else if(!Character.isLetterOrDigit(currLast)) {
+                last--;
+            } else {
+                if (Character.toLowerCase(currFirst) != Character.toLowerCase(currLast)) {
+                    return false;
+                }
+                start++;
+                last--;
             }
         }
         return true;
-    }
-
-    private String convert(String s) {
-        for (char c : s.toCharArray()) {
-            if (Character.isLetterOrDigit(c)) {
-                sb.append(Character.toLowerCase(c));
-            }
-        }
-        return sb.toString();
     }
 }
