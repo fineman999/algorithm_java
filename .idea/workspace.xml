@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9612584-a1b6-45ef-8e87-27a7c6f1d501" name="Changes" comment="[#2] 리팩토링">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/longest_substring_without_reapeating_characters/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/minimum_size_subarray_sum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/longest_substring_without_reapeating_characters/SolutionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/minimum_size_subarray_sum/SolutionTest.java" afterDir="false" />
+    <list default="true" id="b9612584-a1b6-45ef-8e87-27a7c6f1d501" name="Changes" comment="[#3] 테스트코드 &amp;&amp; 프로덕션 코드 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/leetcode/longest_substring_without_reapeating_characters/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/longest_substring_without_reapeating_characters/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/leetcode/longest_substring_without_reapeating_characters/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/longest_substring_without_reapeating_characters/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,31 @@
       <recent name="org.leetcode.mergesortedarray" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SolutionTest.test">
+  <component name="RunManager" selected="Gradle.SolutionTest (1)">
+    <configuration name="SolutionTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.leetcode.longest_substring_without_reapeating_characters.SolutionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="SolutionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -97,7 +119,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SolutionTest.example" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SolutionTest.example (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -110,7 +132,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.leetcode.validpalindrome.SolutionTest.example&quot;" />
+            <option value="&quot;org.leetcode.longest_substring_without_reapeating_characters.SolutionTest.example&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,37 +191,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'org.leetcode.mergesortedarray'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.leetcode.mergesortedarray.*&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SolutionTest (1)" />
         <item itemvalue="Gradle.SolutionTest.test" />
+        <item itemvalue="Gradle.SolutionTest.example (1)" />
         <item itemvalue="Gradle.SolutionTest.minSubArrayLen" />
         <item itemvalue="Gradle.SolutionTest" />
-        <item itemvalue="Gradle.SolutionTest.example" />
-        <item itemvalue="Gradle.Tests in 'org.leetcode.mergesortedarray'" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +212,7 @@
       <workItem from="1692789658962" duration="1668000" />
       <workItem from="1692873434985" duration="5260000" />
       <workItem from="1692878721937" duration="5930000" />
-      <workItem from="1693034716924" duration="9727000" />
+      <workItem from="1693034716924" duration="11840000" />
     </task>
     <task id="LOCAL-00001" summary="[#1] 기본">
       <option name="closed" value="true" />
@@ -264,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693043671607</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[#3] 테스트코드 &amp;&amp; 프로덕션 코드 작성">
+      <option name="closed" value="true" />
+      <created>1693047411239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693047411240</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +293,8 @@
     <MESSAGE value="[#2] 1차 작성" />
     <MESSAGE value="[#2] 성능 개선" />
     <MESSAGE value="[#2] 리팩토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="[#2] 리팩토링" />
+    <MESSAGE value="[#3] 테스트코드 &amp;&amp; 프로덕션 코드 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[#3] 테스트코드 &amp;&amp; 프로덕션 코드 작성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,6 +307,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/leetcode/longest_substring_without_reapeating_characters/Solution.java</url>
+          <line>15</line>
+          <properties class="org.leetcode.longest_substring_without_reapeating_characters.Solution" method="lengthOfLongestSubstring">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
