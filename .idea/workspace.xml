@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9612584-a1b6-45ef-8e87-27a7c6f1d501" name="Changes" comment="[#1] 기본">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/Constraints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/IntegerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/ProxyPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/mergesortedarray/ConstraintsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/mergesortedarray/IntegerUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/mergesortedarray/ProxyPatternTest.java" afterDir="false" />
+    <list default="true" id="b9612584-a1b6-45ef-8e87-27a7c6f1d501" name="Changes" comment="[#1] 프록시 패턴 + 테스트 코드">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/validpalindrome/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/leetcode/mergesortedarray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/leetcode/mergesortedarray/SolutionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/leetcode/mergesortedarray/SolutionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,7 +67,7 @@
       <recent name="org.leetcode.mergesortedarray" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ConstraintsTest">
+  <component name="RunManager" selected="Gradle.Tests in 'org.leetcode.mergesortedarray'">
     <configuration name="ArrayTemplateTest.example1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SolutionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'org.leetcode.mergesortedarray'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.leetcode.mergesortedarray.SolutionTest&quot;" />
+            <option value="&quot;org.leetcode.mergesortedarray.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'org.leetcode.mergesortedarray'" />
         <item itemvalue="Gradle.ConstraintsTest" />
         <item itemvalue="Gradle.IntegerUtilsTest" />
         <item itemvalue="Gradle.ConstraintsTest.merge" />
         <item itemvalue="Gradle.ArrayTemplateTest.example1" />
-        <item itemvalue="Gradle.SolutionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +208,8 @@
       <updated>1692789657890</updated>
       <workItem from="1692789658962" duration="1668000" />
       <workItem from="1692873434985" duration="5260000" />
-      <workItem from="1692878721937" duration="3715000" />
+      <workItem from="1692878721937" duration="5930000" />
+      <workItem from="1693034716924" duration="1894000" />
     </task>
     <task id="LOCAL-00001" summary="[#1] 기본">
       <option name="closed" value="true" />
@@ -225,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692874194471</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[#1] 프록시 패턴 + 테스트 코드">
+      <option name="closed" value="true" />
+      <created>1692883130568</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692883130569</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +246,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[#1] 기본" />
-    <option name="LAST_COMMIT_MESSAGE" value="[#1] 기본" />
+    <MESSAGE value="[#1] 프록시 패턴 + 테스트 코드" />
+    <option name="LAST_COMMIT_MESSAGE" value="[#1] 프록시 패턴 + 테스트 코드" />
   </component>
 </project>

@@ -24,7 +24,7 @@ class SolutionTest {
     }
     @ParameterizedTest
     @MethodSource("generateData")
-    @DisplayName("예제 테스트")
+    @DisplayName("merge 메서드는 nums1 배열과 m, nums2 배열과 n 을 받아 true 를 반환한다.")
     void example1(int nums1[], int m, int nums2[], int n, int expected[]) {
         solution.merge(nums1, m, nums2, n);
         assertThat(nums1).isEqualTo(expected);
