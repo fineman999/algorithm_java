@@ -30,4 +30,16 @@ class DetectCycleTest {
 
         assertThat(actual).isNull();
     }
+
+    @Test
+    @DisplayName("getCycleLength 메서드는 ListNode인 head [3, 2, 0, -4]를 받고 pos가 1이면 3를 반환한다.")
+    void getCycleLength() {
+        ListNode head = ListNode.of(3, 2, 0, -4);
+        ListNode.setPos(head, 1);
+
+        int cycleLength = solution.getCycleLength(head);
+
+        assertThat(cycleLength).isEqualTo(3);
+    }
+
 }

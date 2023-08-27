@@ -45,6 +45,23 @@ public class Solution {
         return null;
     }
 
+    public int getCycleLength(ListNode head) {
+
+        ListNode start = detectCycle(head); // 이전에 구현한 detectCycle 메서드를 사용한다.
+        if (start == null) {
+            return 0;
+        }
+        ListNode curr = start;
+        int length = 0;
+        while (curr != null) {
+            curr = curr.next;
+            length++;
+            if (start == curr) {
+                return length;
+            }
+        }
+        return length;
+    }
     private ListNode getNode(ListNode head, ListNode tortoise) {
         ListNode hare;
         hare = head;
