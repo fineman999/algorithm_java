@@ -24,7 +24,6 @@ public class ListNode {
         return dummy.next;
     }
 
-
     /**
      * ListNode를 문자열 표현을 반환한다.
      * 이 문자열은 next를 통해 값 -> 다음 값 -> 다음 값 -> ...  형태로 반환한다.
