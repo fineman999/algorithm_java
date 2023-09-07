@@ -1,5 +1,6 @@
 package org.data_structure.tree;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 public class BinarySearchTree<T extends Comparable<T>> {
@@ -13,7 +14,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         root = insert(root, data);
     }
 
-    public Node<T> search(T data) {
+    public boolean search(T data) {
         return search(root, data);
     }
 
@@ -21,7 +22,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return delete(root, data);
     }
     private Node<T> insert(Node<T> node, T data) {
-        if (node == null) {
+        if (Objects.isNull(node)) {
             node = new Node<>(data);
             return node;
         }
@@ -34,15 +35,15 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return node;
     }
 
-    private Node<T> search(Node<T> node, T data) {
-        if (node == null) return null;
-        if (data.compareTo(node.data) == 0) return node;
+    private boolean search(Node<T> node, T data) {
+        if (Objects.isNull(node)) return false;
+        if (data.compareTo(node.data) > 0) return search(node.right, data);
         if (data.compareTo(node.data) < 0) return search(node.left, data);
-        return search(node.right, data);
+        return true;
     }
 
     private Node<T> delete(Node<T> node, T data) {
-        if (node == null) return null;
+        if (Objects.isNull(node)) return null;
 
         if (data.compareTo(node.data) < 0) {
             node.left = delete(node.left, data);
@@ -50,24 +51,24 @@ public class BinarySearchTree<T extends Comparable<T>> {
             node.right = delete(node.right, data);
         } else {
 
-            if (node.left == null && node.right == null) {
+            if (Objects.isNull(node.left) && Objects.isNull(node.right)) {
                 node = null;
-            } else if (node.left == null) {
+            } else if (Objects.isNull(node.left)) {
                 node = node.right;
-            } else if (node.right == null) {
+            } else if (Objects.isNull(node.right)) {
                 node = node.left;
             } else {
-                Node<T> temp = findMaxInLeftSubtree(node.right);
+                Node<T> temp = findMaxInLeftSubtree(node.left);
                 node.data = temp.data;
-                node.right = delete(node.right, temp.data);
+                node.left = delete(node.left, temp.data);
             }
         }
         return node;
     }
 
     private Node<T> findMaxInLeftSubtree(Node<T> node) {
-        while (node.left != null) {
-            node = node.left;
+        if (!Objects.isNull(node.right)) {
+            return findMaxInLeftSubtree(node.right);
         }
         return node;
     }

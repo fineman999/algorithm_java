@@ -14,4 +14,9 @@ public class Node<T extends Comparable<T>> implements Comparable<Node<T>>{
     public int compareTo(Node<T> o) {
         return this.data.compareTo(o.data);
     }
+
+    @Override
+    public String toString() {
+        return data.toString();
+    }
 }
