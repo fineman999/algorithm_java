@@ -55,14 +55,16 @@ class BinarySearchTreeTest {
         bst.insert(60);
         bst.insert(80);
 
+        // 1. 노드가 단말 노드(자식이 없는 노드)일 경우
         bst.delete(20);
         assertThat(bst.toString()).isEqualTo("[30, 40, 50, 60, 70, 80]");
 
+        // 2. 삭제하려는 노드가 자식을 하나만 가지고 있을 경우
         bst.delete(30);
         assertThat(bst.toString()).isEqualTo("[40, 50, 60, 70, 80]");
 
+        // 3. 삭제하려는 노드가 자식을 두개 가지고 있을 경우
         bst.delete(50);
         assertThat(bst.toString()).isEqualTo("[40, 60, 70, 80]");
-
     }
 }
