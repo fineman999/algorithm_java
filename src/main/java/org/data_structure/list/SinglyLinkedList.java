@@ -9,6 +9,10 @@ public class SinglyLinkedList<E> {
         this.size = 0;
     }
 
+    public void add(E data) {
+        add(size, data);
+    }
+
     public void add(int index, E data) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
@@ -81,5 +85,21 @@ public class SinglyLinkedList<E> {
         size--;
 
         return data;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Node<E> node = head;
+        for (int i = 0; i < size; i++) {
+            sb.append(node.data);
+            if (i < size - 1) {
+                sb.append(", ");
+            }
+            node = node.next;
+        }
+        sb.append("]");
+        return sb.toString();
     }
 }
