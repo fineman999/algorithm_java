@@ -12,11 +12,14 @@ public class Solution {
             queue.add(num);
         }
 
-        while (k != 1) {
+        while (k != 1 && !queue.isEmpty()) {
             queue.poll();
             k -= 1;
         }
 
+        if (queue.isEmpty()) {
+            return -1;
+        }
         return queue.peek();
     }
 }
